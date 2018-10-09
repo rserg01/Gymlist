@@ -8,6 +8,6 @@
 
 import Foundation
 
-class GymServiceProtocol: NSObject {
-    
+protocol GymServiceProtocol : class {
+        func fetchGymList(completion: @escaping ([Gym]?, Error?) -> ())
 }

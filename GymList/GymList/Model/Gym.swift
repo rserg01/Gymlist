@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+struct Gym : Decodable {
+    let name, address : String
+}

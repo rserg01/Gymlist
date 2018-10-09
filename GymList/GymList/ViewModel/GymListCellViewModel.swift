@@ -9,5 +9,10 @@
 import Foundation
 
 struct GymListCellViewModel {
+    let name, address : String
     
+    init(gym:Gym) {
+        self.name = gym.name
+        self.address = gym.address
+    }
 }

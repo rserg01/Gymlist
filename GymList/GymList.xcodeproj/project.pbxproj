@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		635E5784216CA8E700BAF6D0 /* GymListViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A36282166118D004239BF /* GymListViewModelSpec.swift */; };
 		638A35F3216607DD004239BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A35F2216607DD004239BF /* AppDelegate.swift */; };
 		638A35F5216607DD004239BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A35F4216607DD004239BF /* ViewController.swift */; };
 		638A35F8216607DD004239BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 638A35F6216607DD004239BF /* Main.storyboard */; };
@@ -21,7 +22,6 @@
 		638A362121661143004239BF /* Gym.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A362021661143004239BF /* Gym.swift */; };
 		638A36242166115D004239BF /* GymService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A36232166115D004239BF /* GymService.swift */; };
 		638A36262166116D004239BF /* GymServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A36252166116D004239BF /* GymServiceProtocol.swift */; };
-		638A36292166118D004239BF /* GymListViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638A36282166118D004239BF /* GymListViewModelSpec.swift */; };
 		A9CFBA93D74F882F27751F3B /* Pods_GymListTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16F451929BB20F8476958791 /* Pods_GymListTests.framework */; };
 		B7F4F20AF9A04E2DF142089D /* Pods_GymList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3D721F3EC2991D03F64B730 /* Pods_GymList.framework */; };
 /* End PBXBuildFile section */
@@ -40,6 +40,8 @@
 		16F451929BB20F8476958791 /* Pods_GymListTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GymListTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		30C241F2B0FF8419AC0A6199 /* Pods-GymList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymList.release.xcconfig"; path = "Pods/Target Support Files/Pods-GymList/Pods-GymList.release.xcconfig"; sourceTree = "<group>"; };
 		6179869511D224BF412EB8FA /* Pods-GymListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymListTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GymListTests/Pods-GymListTests.debug.xcconfig"; sourceTree = "<group>"; };
+		635E5780216CA8BB00BAF6D0 /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		635E5782216CA8C000BAF6D0 /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		638A35EF216607DD004239BF /* GymList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		638A35F2216607DD004239BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		638A35F4216607DD004239BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -118,7 +120,6 @@
 		638A35F1216607DD004239BF /* GymList */ = {
 			isa = PBXGroup;
 			children = (
-				638A36272166117B004239BF /* Test */,
 				638A362221661149004239BF /* Service */,
 				638A361F21661138004239BF /* Model */,
 				638A361A2166110A004239BF /* ViewModel */,
@@ -137,6 +138,7 @@
 		638A3609216607E0004239BF /* GymListTests */ = {
 			isa = PBXGroup;
 			children = (
+				638A36282166118D004239BF /* GymListViewModelSpec.swift */,
 				638A360A216607E0004239BF /* GymListTests.swift */,
 				638A360C216607E0004239BF /* Info.plist */,
 			);
@@ -178,17 +180,11 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
-		638A36272166117B004239BF /* Test */ = {
-			isa = PBXGroup;
-			children = (
-				638A36282166118D004239BF /* GymListViewModelSpec.swift */,
-			);
-			path = Test;
-			sourceTree = "<group>";
-		};
 		91E688DAD2157CE898D13ADE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				635E5782216CA8C000BAF6D0 /* Nimble.framework */,
+				635E5780216CA8BB00BAF6D0 /* Quick.framework */,
 				D3D721F3EC2991D03F64B730 /* Pods_GymList.framework */,
 				16F451929BB20F8476958791 /* Pods_GymListTests.framework */,
 			);
@@ -206,6 +202,7 @@
 				638A35EB216607DD004239BF /* Sources */,
 				638A35EC216607DD004239BF /* Frameworks */,
 				638A35ED216607DD004239BF /* Resources */,
+				A53B1BB9BFDCF7E5190300ED /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -224,6 +221,7 @@
 				638A3602216607E0004239BF /* Sources */,
 				638A3603216607E0004239BF /* Frameworks */,
 				638A3604216607E0004239BF /* Resources */,
+				97959F67D9073720FFA0498E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -316,6 +314,54 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		97959F67D9073720FFA0498E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GymListTests/Pods-GymListTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GymListTests/Pods-GymListTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A53B1BB9BFDCF7E5190300ED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GymList/Pods-GymList-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GymList/Pods-GymList-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		AF7601CD704650D3DE7563D2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -347,7 +393,6 @@
 			files = (
 				638A36242166115D004239BF /* GymService.swift in Sources */,
 				638A36262166116D004239BF /* GymServiceProtocol.swift in Sources */,
-				638A36292166118D004239BF /* GymListViewModelSpec.swift in Sources */,
 				638A35F5216607DD004239BF /* ViewController.swift in Sources */,
 				638A362121661143004239BF /* Gym.swift in Sources */,
 				638A361E21661131004239BF /* GymListCellViewModel.swift in Sources */,
@@ -364,6 +409,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				638A360B216607E0004239BF /* GymListTests.swift in Sources */,
+				635E5784216CA8E700BAF6D0 /* GymListViewModelSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,6 +567,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BP2999CPU5;
 				INFOPLIST_FILE = GymList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -540,6 +587,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BP2999CPU5;
 				INFOPLIST_FILE = GymList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

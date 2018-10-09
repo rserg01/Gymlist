@@ -9,16 +9,16 @@
 import UIKit
 
 class GymListTableViewCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    
+    var viewModel : GymListCellViewModel! {
+        didSet {
+            textLabel?.text = viewModel.name
+            detailTextLabel?.text = viewModel.address
+        }
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError()
     }
 
 }

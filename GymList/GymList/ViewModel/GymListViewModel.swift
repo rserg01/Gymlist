@@ -10,4 +10,12 @@ import Foundation
 
 struct GymListViewModel {
     
+    let name, address : String
+    let gymCount : Int
+    
+    init(gymList: Gym) {
+        self.name = gymList.name
+        self.address = gymList.address
+    }
+    
 }
